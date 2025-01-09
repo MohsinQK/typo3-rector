@@ -6,6 +6,7 @@ namespace Ssch\TYPO3Rector\TYPO312\v0;
 
 use PhpParser\Node;
 use PhpParser\Node\Expr\StaticCall;
+use PHPStan\Type\ObjectType;
 use Rector\Rector\AbstractRector;
 use Symplify\RuleDocGenerator\Contract\DocumentedRuleInterface;
 use Symplify\RuleDocGenerator\ValueObject\CodeSample\CodeSample;
@@ -56,7 +57,7 @@ CODE_SAMPLE
 
         if (! $this->nodeTypeResolver->isMethodStaticCallOrClassMethodObjectType(
             $node,
-            ExtensionManagementUtility::class
+            new ObjectType(ExtensionManagementUtility::class)
         )) {
             return null;
         }
