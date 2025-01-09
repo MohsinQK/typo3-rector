@@ -30,9 +30,10 @@ ExtensionManagementUtility::addLLrefForTCAdescr('_MOD_web_info', 'EXT:info/Resou
 CODE_SAMPLE
                 ,
                 <<<'CODE_SAMPLE'
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 CODE_SAMPLE
             ),
-        
+
         ]);
     }
 
