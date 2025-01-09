@@ -24,18 +24,19 @@ final class RemoveAddLLrefForTCAdescrMethodCallRector extends AbstractRector imp
         return new RuleDefinition(
             'Remove ExtensionManagementUtility::addLLrefForTCAdescr() method call as it will be removed in TYPO3 v13',
             [
-            new CodeSample(
-                <<<'CODE_SAMPLE'
+                new CodeSample(
+                    <<<'CODE_SAMPLE'
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 ExtensionManagementUtility::addLLrefForTCAdescr('_MOD_web_info', 'EXT:info/Resources/Private/Language/locallang_csh_web_info.xlf');
 CODE_SAMPLE
-                ,
-                <<<'CODE_SAMPLE'
+                    ,
+                    <<<'CODE_SAMPLE'
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 CODE_SAMPLE
-            ),
+                ),
 
-        ]);
+            ]
+        );
     }
 
     /**
