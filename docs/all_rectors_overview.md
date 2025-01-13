@@ -2600,7 +2600,7 @@ Move method ExtensionManagementUtility::allowTableOnStandardPages to TCA configu
 
 ### RemoveAddLLrefForTCAdescrMethodCallRector
 
-Remove `ExtensionManagementUtility::addLLrefForTCAdescr()` method call as it will be removed in TYPO3 v13
+Remove `ExtensionManagementUtility::addLLrefForTCAdescr()` method call
 
 - class: [`Ssch\TYPO3Rector\TYPO312\v0\RemoveAddLLrefForTCAdescrMethodCallRector`](../rules/TYPO312/v0/RemoveAddLLrefForTCAdescrMethodCallRector.php)
 
